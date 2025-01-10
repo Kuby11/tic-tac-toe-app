@@ -1,5 +1,4 @@
 import './style.scss';
-import './libs/finisher-header.es5.min';
 
 const choices = ["rock", "paper","scissors"];
 const playerDisplay = document.querySelector(".player-choice") as HTMLElement;
