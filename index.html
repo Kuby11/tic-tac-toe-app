@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <title>tic tac toe</title>
+  </head>
+  <body class="finisher-header">
+    <div id="app">
+      <header class="header">
+        <h1 class="app-title">rock paper scissors</h1>
+      </header>
+      <div class="buttons">
+        <button class="button" id="button-rock">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M80-160v-480h120v-160h240v160h80v-160h240v160h120v480H80Zm80-80h640v-320H160v320Zm120-400h80v-80h-80v80Zm320 0h80v-80h-80v80ZM160-240h640-640Zm120-400h80-80Zm320 0h80-80Z"/>
+            </svg>
+            <h3>rock</h3>
+        </button>
+        <button class="button" id="button-paper" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/>
+            </svg>
+            <h3>paper</h3>
+      </button>
+      <button class="button" id="button-scissors">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M760-120 480-400l-94 94q8 15 11 32t3 34q0 66-47 113T240-80q-66 0-113-47T80-240q0-66 47-113t113-47q17 0 34 3t32 11l94-94-94-94q-15 8-32 11t-34 3q-66 0-113-47T80-720q0-66 47-113t113-47q66 0 113 47t47 113q0 17-3 34t-11 32l494 494v40H760ZM600-520l-80-80 240-240h120v40L600-520ZM240-640q33 0 56.5-23.5T320-720q0-33-23.5-56.5T240-800q-33 0-56.5 23.5T160-720q0 33 23.5 56.5T240-640Zm240 180q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6ZM240-160q33 0 56.5-23.5T320-240q0-33-23.5-56.5T240-320q-33 0-56.5 23.5T160-240q0 33 23.5 56.5T240-160Z"/>
+          </svg>
+          <h3>scissors</h3>
+        </button>
+      </div>
+      <section class="score-section">
+        <div class="choices-display">
+          <div class="player-choice">PLAYER: </div>
+          <div class="computer-choice">COMPUTER: </div>
+          <div class="result">no result</div>
+        </div>
+        <div class="scoreboard">
+          <div class="player-score win-color">0</div>
+          <div> : </div>
+          <div class="computer-score lose-color">0</div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="src/libs/finisher-header.es5.min.js"></script>
+    <script type="text/javascript">
+      new FinisherHeader({
+        "count": 12,
+        "size": {
+          "min": 1300,
+          "max": 1500,
+          "pulse": 0
+        },
+        "speed": {
+          "x": {
+            "min": 0.6,
+            "max": 3
+          },
+          "y": {
+            "min": 0.6,
+            "max": 3
+          }
+        },
+        "colors": {
+          "background": "#953eff",
+          "particles": [
+            "#88e5ee",
+            "#231efe",
+            "#ec129c"
+          ]
+        },
+        "blending": "lighten",
+        "opacity": {
+          "center": 0.6,
+          "edge": 0
+        },
+        "skew": 0,
+        "shapes": [
+          "c"
+        ]
+      });
+      </script>
+      <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
